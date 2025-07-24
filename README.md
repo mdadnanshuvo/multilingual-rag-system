@@ -6,6 +6,35 @@ This project implements a **Retrieval-Augmented Generation (RAG)** pipeline that
 
 ---
 
+## Project Structure
+
+```
+multilingual-rag-system/
+│
+├── main.py
+├── requirements.txt
+├── .env
+├── .gitignore
+├── README.md
+│
+└── app/
+    ├── __init__.py                 # (assumed, for package structure)
+    ├── chunker.py                  # Chunking logic for text
+    ├── cleaner.py                  # OCR text cleaning utilities
+    ├── embedding_store.py          # FAISS+SentenceTransformer vector storage/query
+    ├── gemini_client.py            # Gemini API integration for answer generation
+    ├── loader.py                   # PDF OCR loader (Tesseract + pdf2image)
+    ├── translator.py               # Translation utilities (Bangla/English)
+    │
+    └── routes/
+        ├── __init__.py             # (assumed, for package structure)
+        ├── ask.py                  # /ask endpoint logic
+        ├── evaluate.py             # /evaluate api endpoint
+        ├── health.py               # /health endpoint logic
+        └── upload.py               # /upload endpoint for PDF ingestion
+```
+
+
 ## 🛠️ Setup Guide
 
 
