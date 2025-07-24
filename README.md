@@ -60,13 +60,13 @@ Visit: `http://localhost:8000/docs` for interactive Swagger UI.
 ## 📝 Sample Queries and Outputs
 
 **Sample 1**
-![image1](image1)
+![image1](outputs/sample_output1)
 
 **Sample 2**
-![image2](image2)
+![image2](outputs/sample_output2)
 
 **Sample 3**
-![image3](image3)
+![image3](outputs/sample_output3)
 
 ---
 
