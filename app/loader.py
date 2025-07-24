@@ -1,8 +1,9 @@
 # app/loader.py
 
 import os
-from pdf2image import convert_from_path
+
 import pytesseract
+from pdf2image import convert_from_path
 
 # Set correct path to Tesseract binary
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
